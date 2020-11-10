@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fixed Nabar , Smooth Scroll and Back To Top Button</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <nav>
+        <a href="#skills"><li>Skills</li></a>
+        <a href="#portfolio"><li>Portfolio</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#contact"><li>Contact</li></a>
+    </nav>
+
+    <header id="header">
+        <h1>Header</h1>
+    </header>
+
+    <section id="skills">
+        <h1>Skills</h1>
+    </section>
+
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+    </section>
+
+    <a href="#header">
+        <div id="button" class="to-top">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+var btn = $('#button');
+
+$(window).scroll(function(){
+    if($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    }
+    else {
+        btn.removeClass('show');
+    }
+    
+});
+
+</script>
+
+</body>
+</html>
